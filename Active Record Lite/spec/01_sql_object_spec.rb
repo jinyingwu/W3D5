@@ -134,6 +134,7 @@ describe SQLObject do
 
       it 'throws an error when given an unknown attribute' do
         expect do
+          # byebug
           Cat.new(favorite_band: 'Anybody but The Eagles')
         end.to raise_error "unknown attribute 'favorite_band'"
       end
